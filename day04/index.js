@@ -18,6 +18,7 @@ async function main() {
 
 
 // crypto data laane walla function
+// 1.
 
 async function getcripto(cripto) {
    const Cryptodata = []
@@ -29,7 +30,16 @@ async function getcripto(cripto) {
     }
 return Cryptodata;
 }
+// 2.
+// async function getcrypto(cripto) {
+//   const cryptodata=[]
 
+//   const responce = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${cripto}`);
+//   const data = await responce.json()
+//   cryptodata.push(data)
+//   return cryptodata;
+
+// }
 // getcrypto([{name: "bitcoin"},{name: "ethereum"}])
 
 // chatting function
