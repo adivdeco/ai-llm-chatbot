@@ -91,8 +91,8 @@ async function chat() {
     break;
  }
 
- const criptodata = await getcripto(responde.cripto); // give data in js obj.
- const criptodata2 = JSON.stringify(criptodata);
+ const criptodata = await getcripto(responde.cripto); // give data in js obj crypto name.
+ const criptodata2 = JSON.stringify(criptodata);   // convert to json format and jSON.parse convert to js object
 
  chathistory.push({role:"user", parts:[{text:criptodata2}]})
 
