@@ -33,8 +33,8 @@ async function getweather(location){     // location[{city: "New York", date: 20
 
       if(date.toLowerCase()=="today"){
 
-    const today = new Date().toISOString().split('T')[0];
-    const response = await fetch(`http://api.weatherapi.com/v1/future.json?key=dc948cb73c5b4417afd164226252604&q=${city}&dt=${today}`);  //&dt={date}
+    // const today = new Date().toISOString().split('T')[0];
+    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=dc948cb73c5b4417afd164226252604&q=${city}&aqi=no`);  //&dt={date}
     const data = await response.json();
     Weatherdata.push(data)
     }
@@ -52,11 +52,11 @@ async function getweather(location){     // location[{city: "New York", date: 20
 
 async function weatherdata2(){
 const question = readlineSync.question('how i can help you? ');
-const today = new Date().toISOString().split('T')[0];
+// const today = new Date().toISOString().split('T')[0];
 
 const prompt = `
 You are a weather assistant. You have to provide the weather information.
-Today's real date is: ${today}.
+
 Strictly follow = "you will only respond to me in JSON format".
 Analyze the user query and try to fetch the (city and date) details from it.
 Date format should be in (YYYY-MM-DD) format.

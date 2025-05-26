@@ -8,9 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@google/genai": "^0.10.0",
     "readline-sync": "^1.4.10"
-  }
+  },
+  "description": ""
 }
