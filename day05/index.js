@@ -1,3 +1,6 @@
+// model which gives que output
+
+
 import { GoogleGenAI } from "@google/genai";
 import readlineSync from 'readline-sync';
 
