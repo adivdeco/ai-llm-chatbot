@@ -4,7 +4,7 @@ import readlineSync from 'readline-sync';
 import wav from 'wav';
 import fs from 'fs';
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyC4i_buH6QbPrQJt9v4IZfO2RqWRM5YQ0s" });
+const ai = new GoogleGenAI({ apiKey: "AIzaSyB0vmU9zScXSTYTuqdTDNkL8gEW4PV05Ps" });
 const History = [];
 
 async function saveWaveFile(filename, pcmData, channels = 1, rate = 24000, sampleWidth = 2) {
